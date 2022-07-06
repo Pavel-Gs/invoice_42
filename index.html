@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Invoice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if mso]>
+        <style>
+            #header-line {
+                width: 600px;
+            }
+
+            #footer {
+                width: 600px;
+            }
+        </style>
+    <![endif]-->
+</head>
+
+
+<!--CONTENTS    (1) THE WHOLE BODY OF THE E-MAIL
+                (1.1)   HEADER (UPPER STRIPE)
+                (1.2)   PRE-HEADER                                          <--(the info is for a manual input)
+                (1.3)   CONTENT BETWEEN THE HEADER AND THE FOOTER
+                (1.3.1)     UPPER TEXT CONTAINER (INVOICE INFO AND ADDRESS)
+                (1.3.1.1)       LEFT INVOICE TEXT (SENDER INFO)
+                (1.3.1.2)       RIGHT INVOICE TEXT (RECIPIENT INFO)         <--(the info is for a manual input)
+                (1.3.2)     A HEADER OF THE TABLE
+                (1.3.3)     A BODY OF THE TABLE                             <--(the info is for a manual input)
+                (1.3.4)     TWO BUTTONS CONTAINER
+                (1.3.4.1)       LEFT BUTTON CONTAINER
+                (1.3.4.1.1)         LEFT BUTTON IMAGE                       <--(the info is for a manual input)
+                (1.3.4.1.2)         LEFT BUTTON TEXT                        <--(the info is for a manual input)
+                (1.3.4.2)       RIGHT BUTTON CONTAINER
+                (1.3.4.2.1)         RIGHT BUTTON IMAGE
+                (1.3.4.2.2)         RIGHT BUTTON TEXT
+                (1.4)   FOOTER CONTAINER
+                (1.4.1)     FOOTER IMAGE (TO THE LEFT)
+                (1.4.2)     FOOTER TEXT (TO THE RIGHT)  -->
+
+
+<!--(1) THE WHOLE BODY OF THE E-MAIL-->
+<body style="font-family: Helvetica, Arial, sans-serif; margin: 0; background-color: white; font-size: 15px !important;">
+    <!--(1.1) HEADER (UPPER STRIPE)-->
+    <div id="header-line" style="max-width: 100%; height: 5px; background-color: orange;"></div>
+    <!--(1.2) PRE-HEADER-->
+    <span style="line-height: 0px !important; font-size: 0px !important;">PG to GeoLink invoice, 2022-06, 1-30</span>   <!--the info is for a manual input-->
+
+
+
+    <!--(1.3) CONTENT BETWEEN THE HEADER AND THE FOOTER-->
+    <div id="main-container" style="max-width: 600px; padding: 0 5px; margin: 0 auto;">
+        <!--(1.3.1) UPPER TEXT CONTAINER (INVOICE INFO AND ADDRESS)-->
+        <table id="invoice-upper-text-container" style="width: 100%; padding: 40px 0;">
+            <tr>
+                <!--(1.3.1.1) LEFT INVOICE TEXT (SENDER INFO)-->
+                <td id="invoice-upper-text-left" style="display: inline-block; color: rgb(158, 158, 158); text-align: left; padding-right: 20px;">
+                    <h2>INVOICE</h2>
+                    <p>
+                        GST#: 72960 1682 RT0001<br>
+                        (604) 652-7851<br>
+                        <a href="#" style="text-decoration: none !important; color: rgb(158, 158, 158) !important">pavel@generalov.ca</a>
+                    </p>
+                    <p>
+                        102 Agnes Street (suite 401)<br>
+                        New Westminster<br>
+                        V3L 5C7
+                    </p>
+                </td>
+
+                <!--(1.3.1.2) RIGHT INVOICE TEXT (RECIPIENT INFO)-->
+                <td id="invoice-upper-text-right" style="display: inline-block; text-align: left;">
+                    <p style="color: black">
+                        <strong>Attention: </strong>GeoLink Land Surveying Ltd. (Scott M. Todd)<br>
+                        <strong>Address: </strong>20609 Logan Avenue, Langley, BC, V3A 7R3<br>
+                        <strong>Telephone: </strong>(604) 764-6445<br>
+                        <strong>e-mail: </strong><a href="#" style="text-decoration: none !important; color: black !important;">scott@geolinklandsurveying.com</a>
+                    </p>
+                    <p>
+                        <strong>Date: </strong>2022-07-05                               <!--the info is for a manual input-->
+                    </p>
+                    <p>
+                        <strong>Invoice#: </strong>042<br>                              <!--the info is for a manual input-->
+                        <strong>Billing period: </strong>June 1 - 30, 2022 <!--the info is for a manual input-->
+                    </p>
+                </td>
+            </tr>
+        </table>
+
+
+
+        <!--SUMMARY TABLE (TWO SEPARATE TABLES: THE HEADER AND THE BODY)-->
+        <!--(1.3.2) A HEADER OF THE TABLE-->
+        <table id="summary-header" style="width: 100%; background-color: orange; border: 1px black solid;">
+            <tr>
+                <td style="text-align: center;">
+                    <h2 style="color: white">MONTHLY SUMMARY</h2>
+                </td>
+            </tr>
+        </table>
+
+        <!--(1.3.3) A BODY OF THE TABLE-->
+        <table id="summary-body" style="width: 100%; border: 1px black solid; border-collapse: collapse;">
+            <tr>
+                <td style="width: 50%; text-align: right; padding: 8px; border: 1px black solid;">Subtotal</td>
+                <td style="width: 50%; text-align: left; padding: 8px; border: 1px black solid;">CAD$ 3495.00</td>  <!--the info is for a manual input-->
+            </tr>
+
+            <tr>
+                <td style="width: 50%; text-align: right; padding: 8px; border: 1px black solid;">Tax (GST 5%)</td>
+                <td style="width: 50%; text-align: left; padding: 8px; border: 1px black solid;">CAD$ 174.75</td>   <!--the info is for a manual input-->
+            </tr>
+
+            <tr>
+                <td style="width: 50%; text-align: right; padding: 8px; border: 1px black solid;">Total</td>
+                <td style="width: 50%; text-align: left; padding: 8px; border: 1px black solid;">CAD$ 3669.75</td>  <!--the info is for a manual input-->
+            </tr>
+        </table>
+
+
+
+        <!--(1.3.4) TWO BUTTONS CONTAINER-->
+        <table id="buttons-container" style="text-align: center; width: 100%; padding: 40px 0;">
+            <!--(1.3.4.1) LEFT BUTTON CONTAINER-->
+            <tr style="width: 200px; display: inline-block; margin: 20px; background-color: greenyellow; border-radius: 8px; border: 1px black solid;">
+                <!--(1.3.4.1.1) LEFT BUTTON IMAGE-->
+                <td style="width: 15%; text-align: right;"> <!--edit *.pdf and img links-->
+                    <a target="_blank" href="https://pavel-gs.github.io/invoice_41/resources/41)%204_PG%20to%20GeoLink%20invoice,%202022-05,%201-31.pdf">
+                        <img src="https://pavel-gs.github.io/invoice_41/resources/summary-icon.png" style="width: 30px;">
+                    </a>
+                </td>
+
+                <!--(1.3.4.1.2) LEFT BUTTON TEXT-->
+                <td style="width: 15%; text-align: left;">
+                    <h3 style="line-height: 0;">    <!--edit *.pdf link-->
+                        <a target="_blank" href="https://pavel-gs.github.io/invoice_41/resources/41)%204_PG%20to%20GeoLink%20invoice,%202022-05,%201-31.pdf" style="text-decoration: none; color: black;">
+                            pdf
+                        </a>
+                    </h3>
+                </td>
+            </tr>
+
+            <!--(1.3.4.2) RIGHT BUTTON CONTAINER-->
+            <tr style="width: 200px; display: inline-block; margin: 20px; background-color: greenyellow; border-radius: 8px; border: 1px black solid;">
+                <!--(1.3.4.2.1) RIGHT BUTTON IMAGE-->
+                <td style="width: 15%; text-align: right;"> <!--edit *.html and img links-->
+                    <a target="_blank" href="https://pavel-gs.github.io/invoice_41/pay.html">
+                        <img src="https://pavel-gs.github.io/invoice_41/resources/pay-icon.png" style="width: 30px;">
+                    </a>
+                </td>
+
+                <!--(1.3.4.2.2) RIGHT BUTTON TEXT-->
+                <td style="width: 15%; text-align: left;">
+                    <h3 style="line-height: 0;">    <!--edit *.html link-->
+                        <a target="_blank" href="https://pavel-gs.github.io/invoice_41/pay.html" style="text-decoration: none; color: black;">
+                            Pay
+                        </a>
+                    </h3>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+
+
+
+    <!--(1.4) FOOTER CONTAINER-->
+    <div id="footer" style="max-width: 100%; padding: 10px 0; background-color: orange;">
+        <table style="max-width: 600px; margin: 0 auto;">
+            <tr>
+                <!--(1.4.1) FOOTER IMAGE (TO THE LEFT)-->
+                <td id="footer-image-left" style="display: inline-block;">  <!--edit img link-->
+                    <img style="width: 100px;" src="https://pavel-gs.github.io/invoice_41/resources/logo.gif">
+                </td>
+
+                <!--(1.4.2) FOOTER TEXT (TO THE RIGHT)-->
+                <td id="footer-text-right" style="display: inline-block;">
+                    <p style="font-size: 13px !important;">
+                        Thank you for your business!<br><br>
+                        Best regards,<br><br>
+                        Pavel Generalov.
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>
